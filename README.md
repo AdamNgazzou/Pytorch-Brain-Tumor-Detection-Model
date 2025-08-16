@@ -64,3 +64,11 @@ This notebook demonstrates building a brain tumor MRI classification model using
 *   **Dataset:** [Brain MRI Images for Brain Tumor Detection](https://www.kaggle.com/datasets/ahmedhamada0/brain-tumor-detection/data)
 *   **Requirements:** PyTorch, torchvision, matplotlib, scikit-learn, torchmetrics, mlxtend.
 *   Follow the code cells in order.
+
+---
+
+## Confusion Matrices
+
+| Pre-trained ResNet18 | Custom SimpleCNN |
+|---|---|
+| ![Confusion Matrix ResNet18](confusion_matrix_resnet.png) | ![Confusion Matrix SimpleCNN](confusion_matrix_cnn.png) |
