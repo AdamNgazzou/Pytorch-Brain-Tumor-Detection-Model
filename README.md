@@ -2,6 +2,10 @@
 
 This notebook demonstrates building a brain tumor MRI classification model using a pre-trained ResNet18 model.
 
+![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)
+![PyTorch](https://img.shields.io/badge/PyTorch-1.10+-red.svg)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 ## Key Aspects
 
 ### Dataset
