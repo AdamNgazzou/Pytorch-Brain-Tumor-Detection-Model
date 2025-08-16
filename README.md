@@ -52,6 +52,6 @@ This notebook demonstrates building a brain tumor MRI classification model using
 
 ### Reproducibility
 
-*   **Dataset:** [Brain MRI Images for Brain Tumor Detection](https://www.kaggle.com/datasets/navoneel/brain-mri-images-for-brain-tumor-detection)
+*   **Dataset:** [Brain MRI Images for Brain Tumor Detection](https://www.kaggle.com/datasets/ahmedhamada0/brain-tumor-detection/data)
 *   **Requirements:** PyTorch, torchvision, matplotlib, scikit-learn, torchmetrics, mlxtend.
 *   Follow the code cells in order.
