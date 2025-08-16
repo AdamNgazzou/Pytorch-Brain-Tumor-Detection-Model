@@ -12,7 +12,7 @@ This notebook demonstrates building a brain tumor MRI classification model using
 
 *   **Type:** Brain MRI Scans
 *   **Classes:** 'negative' (no tumor), 'positive' (tumor)
-*   **Size:** 227 images total (181 training, 46 testing)
+*   **Size:** 3000 images total (2400 training, 600 testing)
 *   **Preprocessing & Augmentation:**
     *   Resized to (224, 224)
     *   Random Rotation, Horizontal Flip, Brightness/Contrast
@@ -37,10 +37,10 @@ This notebook demonstrates building a brain tumor MRI classification model using
 
 *   **Metrics Used:** Accuracy, Precision, Recall, F1-score, Confusion Matrix
 *   **Key Result (Test Set):**
-    *   Accuracy: **~91.30%**
-    *   Precision: **~91.59%**
-    *   Recall: **~91.30%**
-    *   F1-score: **~91.27%**
+    *   Accuracy: **~99.67%**
+    *   Precision: **~99.67%**
+    *   Recall: **~99.67%**
+    *   F1-score: **~99.67%**
 *   **Improvements:** Fine-tuning significantly improved performance compared to training from scratch.
 *   **Visualizations:** Class distribution bar plot and Confusion Matrix.
 
