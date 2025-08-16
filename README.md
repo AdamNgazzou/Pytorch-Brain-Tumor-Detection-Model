@@ -37,10 +37,10 @@ This notebook demonstrates building a brain tumor MRI classification model using
 
 *   **Metrics Used:** Accuracy, Precision, Recall, F1-score, Confusion Matrix
 *   **Key Result (Test Set):**
-    *   Accuracy: **~89.13%**
-    *   Precision: **~90.94%**
-    *   Recall: **~89.13%**
-    *   F1-score: **~88.89%**
+    *   Accuracy: **~91.30%**
+    *   Precision: **~91.59%**
+    *   Recall: **~91.30%**
+    *   F1-score: **~91.27%**
 *   **Improvements:** Fine-tuning significantly improved performance compared to training from scratch.
 *   **Visualizations:** Class distribution bar plot and Confusion Matrix.
 
