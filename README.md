@@ -1,9 +1,9 @@
-# Brain Tumor MRI Classification with Transfer Learning
+# Brain Tumor MRI Classification with Transfer Learning and Custom CNN
 
-This notebook demonstrates building a brain tumor MRI classification model using a pre-trained ResNet18 model.
+This notebook demonstrates building a brain tumor MRI classification model using both a pre-trained ResNet18 model and a custom Convolutional Neural Network (CNN) architecture trained from scratch.
 
-![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)
-![PyTorch](https://img.shields.io/badge/PyTorch-1.10+-red.svg)
+![Python](https://img.shields.io/badge/Python-3.7%2B-blue.svg)
+![PyTorch](https://img.shields.io/badge/PyTorch-1.10%2B-red.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Key Aspects
@@ -19,36 +19,45 @@ This notebook demonstrates building a brain tumor MRI classification model using
     *   Converted to Tensors
     *   Normalized
 
-### Model & Fine-Tuning
+### Models & Training
 
-*   **Base Model:** Pre-trained **ResNet18**
-*   **Method:** **Transfer Learning / Fine-Tuning**
-*   **Modification:** Replaced the final layer with `nn.Sequential(nn.Dropout(0.5), nn.Linear(num_ftrs, 2))`
-*   **Why Fine-Tune?** Leverage features learned from a large dataset (ImageNet) and adapt them for brain MRI classification.
+*   **Model 1: Pre-trained ResNet18 (Transfer Learning / Fine-Tuning)**
+    *   **Base Model:** Pre-trained **ResNet18**
+    *   **Method:** **Transfer Learning / Fine-Tuning**
+    *   **Modification:** Replaced the final layer with `nn.Sequential(nn.Dropout(0.5), nn.Linear(num_ftrs, 2))`
+    *   **Why Fine-Tune?** Leverage features learned from a large dataset (ImageNet) and adapt them for brain MRI classification.
+    *   **Training:** Trained for 10 epochs.
 
-### Training Process
+*   **Model 2: Custom SimpleCNN (Trained from Scratch)**
+    *   **Architecture:** A simple CNN with convolutional, ReLU, and max pooling layers, followed by fully connected layers and dropout.
+    *   **Method:** Trained from scratch on the brain MRI dataset.
+    *   **Training:** Trained for 20 epochs.
 
-*   **Epochs:** 10
-*   **Loss Function:** `nn.CrossEntropyLoss`
-*   **Optimizer:** **SGD** (lr=0.001, momentum=0.9, weight_decay=0.0001)
-*   **Techniques:** Dropout, Weight Decay
+*   **Shared Training Details:**
+    *   **Loss Function:** `nn.CrossEntropyLoss`
+    *   **Optimizer:** **SGD** (lr=0.001, momentum=0.9, weight_decay=0.0001)
+    *   **Techniques:** Dropout, Weight Decay
 
 ### Evaluation & Results
 
 *   **Metrics Used:** Accuracy, Precision, Recall, F1-score, Confusion Matrix
-*   **Key Result (Test Set):**
-    *   Accuracy: **~99.67%**
-    *   Precision: **~99.67%**
-    *   Recall: **~99.67%**
-    *   F1-score: **~99.67%**
-*   **Improvements:** Fine-tuning significantly improved performance compared to training from scratch.
+*   **Key Results (Test Set):**
+    *   **Pre-trained ResNet18:**
+        *   Accuracy: **~99.67%**
+        *   Precision: **~99.67%**
+        *   Recall: **~99.67%**
+        *   F1-score: **~99.67%**
+    *   **Custom SimpleCNN:**
+        *   Accuracy: **~97.17%**
+        *   Precision: **~97.17%**
+        *   Recall: **~97.17%**
+        *   F1-score: **~97.17%**
 *   **Visualizations:** Class distribution bar plot and Confusion Matrix.
 
 ### Conclusion
 
-*   Successfully built a brain tumor MRI classifier using **transfer learning**.
-*   Fine-tuning **improved classification performance**.
-*   Achieved **good performance metrics** on the test set.
+*   Both **transfer learning** with a pre-trained ResNet18 and training a **custom CNN from scratch** achieved comparable and good performance on the brain tumor MRI classification task.
+*   The performance metrics indicate that both approaches were successful in classifying brain MRI images.
 
 ### Reproducibility
 
